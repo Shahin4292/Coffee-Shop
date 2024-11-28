@@ -1,3 +1,5 @@
+import 'package:coffee_shop/screens/home_screen.dart';
+import 'package:coffee_shop/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,11 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        scaffoldBackgroundColor: const Color(0xFF212325)
       ),
+      home: const HomeScreen(),
     );
   }
 }
-

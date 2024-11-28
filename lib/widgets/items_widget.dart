@@ -27,6 +27,14 @@ class ItemsWidget extends StatelessWidget {
                       blurRadius: 8,
                     )
                   ]),
+              child: InkWell(
+                onTap: () {},
+                child: Image.asset(
+                  "assets/images/${img[i]}.png",
+                  width: 120,
+                  height: 120,
+                ),
+              ),
             )
         ]);
   }

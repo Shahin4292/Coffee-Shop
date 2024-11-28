@@ -1,3 +1,4 @@
+import 'package:coffee_shop/widgets/items_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -75,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen>
               color: const Color.fromARGB(255, 50, 54, 56),
             ),
             child: TextFormField(
-              style:  TextStyle(
+              style: TextStyle(
                   color: Colors.white.withOpacity(0.5),
                   fontWeight: FontWeight.w500,
                   fontSize: 18),
@@ -121,6 +122,13 @@ class _HomeScreenState extends State<HomeScreen>
           const SizedBox(
             height: 10,
           ),
+          Center(
+            child: Column(
+              children: [
+                ItemsWidget(),
+              ],
+            ),
+          )
         ],
       ),
     );
