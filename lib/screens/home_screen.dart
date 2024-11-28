@@ -1,6 +1,8 @@
 import 'package:coffee_shop/widgets/items_widget.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/home_bottom_bar.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -123,14 +125,15 @@ class _HomeScreenState extends State<HomeScreen>
             height: 10,
           ),
           Center(
-            child: Column(
-              children: [
-                ItemsWidget(),
-              ],
-            ),
-          )
+              child: [
+            ItemsWidget(),
+            ItemsWidget(),
+            ItemsWidget(),
+            ItemsWidget(),
+          ][_tabController.index])
         ],
       ),
+      bottomNavigationBar: const HomeBottomBar(),
     );
   }
 }

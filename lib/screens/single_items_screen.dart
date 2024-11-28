@@ -161,7 +161,7 @@ class SingleItemsScreen extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(
-                        height: 60,
+                        height: 30,
                       ),
                       SizedBox(
                         width: MediaQuery.sizeOf(context).width,
